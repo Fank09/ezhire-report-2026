@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EZHire Release Update</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@phosphor-icons/web@2.1.2/src/regular/style.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="release-page" aria-labelledby="page-title">
+      <section class="hero">
+        <div class="container hero__content">
+          <h1 id="page-title"><span>EZHire</span> Release Update</h1>
+          <p>
+            Explore the latest EZHire features and improvements delivered in
+            line with our planned milestones.
+          </p>
+          <div class="milestone">Milestone: July 23, 2026</div>
+        </div>
+      </section>
+
+      <section class="overview container" aria-label="Release overview">
+        <div class="visual-grid">
+          <article class="visual-card visual-card--chart" aria-label="Issue trend chart">
+            <div class="bar-chart" id="issue-chart">
+              <div class="bar-chart__header">
+                <h2>Issues by month</h2>
+              </div>
+              <div class="bar-chart__body">
+                <div class="bar-chart__axis-wrap">
+                  <p>Issues per month</p>
+                  <div class="bar-chart__y-axis" aria-hidden="true"></div>
+                </div>
+                <div class="bar-chart__plot" role="list" aria-label="Monthly issue counts"></div>
+              </div>
+              <p class="bar-chart__note">
+                * Count only items with a <strong>Closed</strong> status, excluding subtasks.
+              </p>
+            </div>
+          </article>
+
+          <article class="visual-card visual-card--donut" aria-label="Issue distribution chart">
+            <h2 class="donut-chart__title">Bi-weekly issues by category</h2>
+            <div class="donut-chart" id="distribution-chart"></div>
+            <div class="chart-legend" aria-label="Issue categories">
+              <span><img src="images/figma-assets/dot-feature.svg" alt="" />Feature: 1</span>
+              <span><img src="images/figma-assets/dot-ux.svg" alt="" />UX/UI: 2</span>
+              <span><img src="images/figma-assets/dot-admin.svg" alt="" />Admin: 1</span>
+            </div>
+          </article>
+        </div>
+
+        <section class="stats-section" aria-labelledby="stats-title">
+          <h2 id="stats-title">Cycle Release Issues</h2>
+          <div class="stats" role="tablist" aria-label="Release categories">
+            <button
+              class="stat-card stat-card--active"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              aria-controls="feature-list"
+              data-tab="feature"
+            >
+              <strong>1</strong>
+              <span>Feature</span>
+            </button>
+            <button
+              class="stat-card"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="feature-list"
+              data-tab="ux"
+            >
+              <strong>2</strong>
+              <span>UX/UI</span>
+            </button>
+            <button
+              class="stat-card"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="feature-list"
+              data-tab="admin"
+            >
+              <strong>1</strong>
+              <span>Admin</span>
+            </button>
+          </div>
+        </section>
+      </section>
+
+      <section class="feature-band">
+        <div class="container">
+          <div
+            class="feature-list"
+            id="feature-list"
+            role="tabpanel"
+            aria-live="polite"
+          ></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <img src="images/figma-assets/ats-logo.png" alt="EZHire" />
+      <p>Copyright @ 2026 EZHire. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
