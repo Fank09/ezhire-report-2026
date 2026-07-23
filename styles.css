@@ -238,6 +238,9 @@ button {
     transform 180ms ease,
     box-shadow 180ms ease,
     filter 180ms ease;
+  animation: bar-rise 560ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  animation-delay: calc(var(--bar-index) * 70ms + 120ms);
+  transform-origin: center bottom;
 }
 
 .bar-chart__tooltip {
@@ -346,12 +349,18 @@ button {
   cursor: pointer;
   outline: none;
   pointer-events: stroke;
+  stroke-linecap: round;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
   transition:
     filter 180ms ease,
     stroke-width 180ms ease,
     transform 180ms ease;
   transform-box: fill-box;
   transform-origin: center;
+  will-change: stroke-dashoffset, opacity;
+  animation: donut-draw 820ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: calc(var(--segment-index) * 130ms + 180ms);
 }
 
 .donut-chart__segment:hover,
@@ -385,6 +394,37 @@ button {
   margin-top: 12px;
   font-size: 16px;
   line-height: 1;
+}
+
+@keyframes bar-rise {
+  from {
+    opacity: 0;
+    transform: scaleY(0.08) translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: scaleY(1) translateY(0);
+  }
+}
+
+@keyframes donut-draw {
+  from {
+    opacity: 0;
+    stroke-dashoffset: 100;
+  }
+
+  to {
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bar-chart__bar,
+  .donut-chart__segment {
+    animation: none;
+  }
 }
 
 .donut-chart__tooltip {

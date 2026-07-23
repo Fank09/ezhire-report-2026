@@ -93,7 +93,7 @@ function renderIssueChart() {
         type="button"
         role="listitem"
         aria-label="${item.month}: ${item.issues} issues"
-        style="--bar-height: ${height}"
+        style="--bar-height: ${height}; --bar-index: ${issueTrend.indexOf(item)}"
       >
         <span class="bar-chart__bar">
           <span class="bar-chart__tooltip">${item.issues} issues</span>
@@ -138,10 +138,12 @@ function renderDistributionChart() {
         data-label="${item.label}"
         data-issues="${item.issues}"
         data-angle="${midAngle}"
+        style="--segment-index: ${issueDistribution.indexOf(item)}"
         d="${arcPath}"
         fill="none"
         stroke="${item.color}"
         stroke-width="40"
+        pathLength="100"
         role="listitem"
         tabindex="0"
         aria-label="${item.label}: ${item.issues} issues"
@@ -271,10 +273,10 @@ function createFeatureCard(item) {
     : "";
   const prodMarkup =
     item.showProd === false
-      ? ""
-      : `<span class="pill pill--blue" aria-label="Production environment">
+          ? ""
+          : `<span class="pill pill--blue" aria-label="Production environment">
           <i class="ph ph-laptop" aria-hidden="true"></i>
-          <span>Prod</span>
+          <span>Deployed</span>
         </span>`;
   const stgMarkup = item.stgUrl
     ? `<a class="pill pill--primary" href="${item.stgUrl}" target="_blank" rel="noopener noreferrer" aria-label="Open staging URL">
