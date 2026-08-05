@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://unpkg.com/@phosphor-icons/web@2.1.2/src/regular/style.css"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=custom-milestone-dropdown-2" />
   </head>
   <body>
     <main class="release-page" aria-labelledby="page-title">
@@ -25,7 +25,28 @@
             Explore the latest EZHire features and improvements delivered in
             line with our planned milestones.
           </p>
-          <div class="milestone">Milestone: July 23, 2026</div>
+          <div class="milestone">
+            <span id="milestone-label">Milestone:</span>
+            <div class="milestone-dropdown" id="milestone-dropdown">
+              <button
+                class="milestone-dropdown__button"
+                id="milestone-select"
+                type="button"
+                aria-haspopup="listbox"
+                aria-expanded="false"
+                aria-labelledby="milestone-label milestone-selected"
+              >
+                <span id="milestone-selected"></span>
+                <img src="images/figma-assets/keyboard-arrow-down.svg" alt="" aria-hidden="true" />
+              </button>
+              <div
+                class="milestone-dropdown__menu"
+                id="milestone-options"
+                role="listbox"
+                aria-labelledby="milestone-label"
+              ></div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -52,11 +73,7 @@
           <article class="visual-card visual-card--donut" aria-label="Issue distribution chart">
             <h2 class="donut-chart__title">Bi-weekly issues by category</h2>
             <div class="donut-chart" id="distribution-chart"></div>
-            <div class="chart-legend" aria-label="Issue categories">
-              <span><img src="images/figma-assets/dot-feature.svg" alt="" />Feature: 1</span>
-              <span><img src="images/figma-assets/dot-ux.svg" alt="" />UX/UI: 2</span>
-              <span><img src="images/figma-assets/dot-admin.svg" alt="" />Admin: 1</span>
-            </div>
+            <div class="chart-legend" id="distribution-legend" aria-label="Issue categories"></div>
           </article>
         </div>
 
@@ -99,7 +116,6 @@
           </div>
         </section>
       </section>
-
       <section class="feature-band">
         <div class="container">
           <div
@@ -111,11 +127,10 @@
         </div>
       </section>
     </main>
-
     <footer class="site-footer">
       <img src="images/figma-assets/ats-logo.png" alt="EZHire" />
       <p>Copyright @ 2026 EZHire. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js?v=latest-milestone-first"></script>
   </body>
 </html>

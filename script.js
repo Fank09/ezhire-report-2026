@@ -1,83 +1,276 @@
-const releaseItems = {
-  feature: [
-    {
-      title: "Google Calendar Connect",
-      description:
-        "Connect Google Calendar with EZHire to schedule interviews, manage appointments, and keep interview events automatically synced in one place.",
-      ticket: "EH-119",
-      stgUrl: "https://stg-ats.reeracoen.tech/en/companies/members/40/edit",
-      ticketUrl: "https://abroaders.backlog.com/view/EH-119",
-      image: "images/google-cld.png",
-      imageAlt: "EZHire Google Calendar integration screen",
+const milestones = [
+  {
+    id: "2026-07-23",
+    label: "July 23, 2026",
+    issueTrend: [
+      { month: "Jan", issues: 6 },
+      { month: "Feb", issues: 30 },
+      { month: "Mar", issues: 6 },
+      { month: "Apr", issues: 7 },
+      { month: "May", issues: 3 },
+      { month: "Jun", issues: 9 },
+      { month: "Jul", issues: 5 },
+    ],
+    issueDistribution: [
+      { label: "Feature", issues: 1, color: "#DB6258" },
+      { label: "UX/UI", issues: 2, color: "#E88981" },
+      { label: "Admin", issues: 1, color: "#F2B4AF" },
+    ],
+    // Feature cards shown in the "Cycle Release Issues" section.
+    releaseItems: {
+      // Feature tab cards.
+      feature: [
+        // Google Calendar Connect card.
+        {
+          title: "Google Calendar Connect",
+          description:
+            "Connect Google Calendar with EZHire to schedule interviews, manage appointments, and keep interview events automatically synced in one place.",
+          ticket: "EH-119",
+          showBadge: true,
+          stgUrl: "https://stg-ats.reeracoen.tech/en/companies/members/40/edit",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-119",
+          image: "images/23-7-2026/google-cld.png",
+          imageAlt: "EZHire Google Calendar integration screen",
+        },
+      ],
+      // UX/UI tab cards.
+      ux: [
+        // Fix Talent Pool Scoreboard card.
+        {
+          title: "Fix Talent Pool Scoreboard",
+          description:
+            "Center the Talent Pool scoreboard so the metrics align cleanly within the dashboard card.",
+          ticket: "EH-126",
+          showBadge: false,
+          stgUrl: "https://stg-ats.reeracoen.tech/dashboard",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-126",
+          image: "images/23-7-2026/talent-pool-scoreboard.png",
+          imageAlt: "EZHire dashboard showing the Talent Pool scoreboard card",
+        },
+        // Search Improvement card.
+        {
+          title: "Search Improvement",
+          description:
+            "Improve the search experience with clearer filters and dynamically updated results.",
+          ticket: "EH-136",
+          showBadge: false,
+          stgUrl: "https://stg-ats.reeracoen.tech/en/jobs",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-136",
+          image: "images/23-7-2026/search-improvement.png",
+          imageAlt: "EZHire jobs page showing improved search filters and dynamic results",
+        },
+      ],
+      // Admin tab cards.
+      admin: [
+        // Bulk Job Close card.
+        {
+          title: "Bulk Job Close",
+          description:
+            "Add multi-select controls so admins can close multiple job items in one action.",
+          ticket: "EH-135",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-135",
+          image: "images/23-7-2026/bulk-job-close.png",
+          imageAlt: "Admin company members page showing selected rows for bulk job close actions",
+        },
+      ],
     },
-  ],
-  ux: [
-    {
-      title: "Fix Talent Pool Scoreboard",
-      description:
-        "Center the Talent Pool scoreboard so the metrics align cleanly within the dashboard card.",
-      ticket: "EH-126",
-      stgUrl: "https://stg-ats.reeracoen.tech/dashboard",
-      ticketUrl: "https://abroaders.backlog.com/view/EH-126",
-      image: "images/talent-pool-scoreboard.png",
-      imageAlt: "EZHire dashboard showing the Talent Pool scoreboard card",
-      showProd: false,
+  },
+  {
+    id: "2026-08-06",
+    label: "August 6, 2026",
+    issueTrend: [
+      { month: "Jun", issues: 9 },
+      { month: "Jul", issues: 6 },
+      { month: "Aug", issues: 3 },
+    ],
+    issueDistribution: [
+      { label: "Feature", issues: 1, color: "#DB6258" },
+      { label: "UX/UI", issues: 1, color: "#E88981" },
+      { label: "Admin", issues: 1, color: "#F2B4AF" },
+    ],
+    // Feature cards shown in the "Cycle Release Issues" section.
+    releaseItems: {
+      // Feature tab cards.
+      feature: [
+        // Bulk Candidate Close card.
+        {
+          title: "Bulk Candidate Close",
+          description:
+            "feature that allows users to close multiple candidates at once",
+          ticket: "EH-137",
+          showBadge: true,
+          stgUrl: "https://stg.ezhire.asia/en/selection_processes?selection_process_display=open",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-137",
+          image: "images/06-8-2026/bulk-cdd-close.png",
+          imageAlt: "Bulk Candidate Close",
+        },
+        // Synced with Job Topgun card.
+        {
+          title: "Synced with Job Topgun",
+          description:
+            "feature that allows users to close multiple candidates at once",
+          ticket: "EH-134",
+          showBadge: true,
+          stgUrl: "https://stg.ezhire.asia/en/selection_processes?selection_process_display=open&source=jobtopgun",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-134",
+          image: "images/06-8-2026/job-topgun.png",
+          imageAlt: "Synced with Job Topgun",
+        },
+                // DPA & TOU card.
+        {
+          title: "Update DPA and ToU",
+          description:
+            "Update Data Processing Agreement (DPA) and Terms of Use (ToU) for expansion to other countries",
+          ticket: "EH-143",
+          showBadge: false,
+          stgUrl: "https://stg.ezhire.asia/en/dashboard",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-143",
+          image: "images/06-8-2026/dpa-tou.png",
+          imageAlt: "Update DPA and ToU",
+        },
+      ],
+      // UX/UI tab cards.
+      ux: [
+        // All/Ongoing Filter card.
+        {
+          title: "All/Ongoing Filter on Dashboard",
+          description:
+            "feature that allows users to filter all or ongoing items on the dashboard",
+          ticket: "EH-130",
+          showBadge: true,
+          stgUrl: "https://stg.ezhire.asia/en/dashboard",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-130",
+          image: "images/06-8-2026/filter-dashboard.png",
+          imageAlt: "All/Ongoing Filter on Dashboard",
+        },
+      ],
+      // Admin tab cards.
+      admin: [
+        // Retention for Log Data card.
+        {
+          title: "Retention for Log Data",
+          description:
+            "Automatically log view and export events on candidate data, capturing: who (user/account), when (timestamp), what (which candidate record).",
+          ticket: "EH-133",
+          showBadge: true,
+          stgUrl: " ",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-133",
+          image: "images/06-8-2026/log-data.png",
+          imageAlt: "Retention for Log Data",
+        },
+      ],
     },
-    {
-      title: "Search Improvement",
-      description:
-        "Improve the search experience with clearer filters and dynamically updated results.",
-      ticket: "EH-136",
-      stgUrl: "https://stg-ats.reeracoen.tech/en/jobs",
-      ticketUrl: "https://abroaders.backlog.com/view/EH-136",
-      image: "images/search-improvement.png",
-      imageAlt: "EZHire jobs page showing improved search filters and dynamic results",
-      showProd: false,
-    },
-  ],
-  admin: [
-    {
-      title: "Bulk Job Close",
-      description:
-        "Add multi-select controls so admins can close multiple job items in one action.",
-      ticket: "EH-135",
-      ticketUrl: "https://abroaders.backlog.com/view/EH-135",
-      image: "images/bulk-job-close.png",
-      imageAlt: "Admin company members page showing selected rows for bulk job close actions",
-      showProd: false,
-    },
-  ],
-};
-
-const issueTrend = [
-  { month: "Jan", issues: 6 },
-  { month: "Feb", issues: 30 },
-  { month: "Mar", issues: 6 },
-  { month: "Apr", issues: 7 },
-  { month: "May", issues: 3 },
-  { month: "Jun", issues: 9 },
-  { month: "Jul", issues: 5 },
+  },
 ];
 
-const issueDistribution = [
-  { label: "Feature", issues: 1, color: "#DB6258" },
-  { label: "UX/UI", issues: 2, color: "#E88981" },
-  { label: "Admin", issues: 1, color: "#F2B4AF" },
-];
-
+const milestoneDropdown = document.querySelector("#milestone-dropdown");
+const milestoneSelect = document.querySelector("#milestone-select");
+const milestoneSelected = document.querySelector("#milestone-selected");
+const milestoneOptions = document.querySelector("#milestone-options");
 const tabs = Array.from(document.querySelectorAll(".stat-card[data-tab]"));
 const featureList = document.querySelector("#feature-list");
 const issueChart = document.querySelector("#issue-chart");
 const distributionChart = document.querySelector("#distribution-chart");
+const distributionLegend = document.querySelector("#distribution-legend");
+let activeMilestone = milestones[0];
 let activeTab = "feature";
 let activeDistributionLabel = null;
 
+const distributionIcons = {
+  Feature: "images/figma-assets/dot-feature.svg",
+  "UX/UI": "images/figma-assets/dot-ux.svg",
+  Admin: "images/figma-assets/dot-admin.svg",
+};
+
+const tabDistributionLabels = {
+  feature: "Feature",
+  ux: "UX/UI",
+  admin: "Admin",
+};
+
+const distributionLabelTabs = Object.fromEntries(
+  Object.entries(tabDistributionLabels).map(([tabName, label]) => [label, tabName]),
+);
+
+function getSyncedIssueDistribution() {
+  return activeMilestone.issueDistribution.map((item) => {
+    const tabName = distributionLabelTabs[item.label];
+    const issues = activeMilestone.releaseItems[tabName]?.length ?? 0;
+    return { ...item, issues };
+  });
+}
+
+function getMilestoneFromUrl() {
+  const milestoneId = new URLSearchParams(window.location.search).get("milestone");
+  return milestones.find((milestone) => milestone.id === milestoneId) ?? milestones[0];
+}
+
+function updateMilestoneUrl(milestoneId) {
+  const url = new URL(window.location.href);
+  url.searchParams.set("milestone", milestoneId);
+  window.history.pushState({ milestoneId }, "", url);
+}
+
+function renderMilestoneOptions() {
+  milestoneSelected.textContent = activeMilestone.label;
+  const sortedMilestones = [...milestones].sort(
+    (first, second) => new Date(second.id) - new Date(first.id),
+  );
+
+  milestoneOptions.innerHTML = sortedMilestones
+    .map(
+      (milestone) =>
+        `<button
+          class="milestone-dropdown__option"
+          type="button"
+          role="option"
+          data-milestone-id="${milestone.id}"
+          aria-selected="${milestone.id === activeMilestone.id}"
+        >
+          ${milestone.label}
+        </button>`,
+    )
+    .join("");
+}
+
+function setMilestoneDropdownOpen(isOpen) {
+  milestoneDropdown.classList.toggle("milestone-dropdown--open", isOpen);
+  milestoneSelect.setAttribute("aria-expanded", String(isOpen));
+}
+
+function selectMilestone(milestoneId, { updateUrl = true } = {}) {
+  activeMilestone =
+    milestones.find((milestone) => milestone.id === milestoneId) ?? milestones[0];
+  if (updateUrl) updateMilestoneUrl(activeMilestone.id);
+  milestoneSelected.textContent = activeMilestone.label;
+
+  milestoneOptions.querySelectorAll(".milestone-dropdown__option").forEach((option) => {
+    option.setAttribute(
+      "aria-selected",
+      String(option.dataset.milestoneId === activeMilestone.id),
+    );
+  });
+
+  if (!activeMilestone.releaseItems[activeTab]) {
+    activeTab = Object.keys(activeMilestone.releaseItems)[0];
+  }
+
+  tabs.forEach((tab) => {
+    const isActive = tab.dataset.tab === activeTab;
+    tab.classList.toggle("stat-card--active", isActive);
+    tab.setAttribute("aria-selected", String(isActive));
+  });
+
+  renderMilestonePage();
+}
+
 function renderIssueChart() {
+  const issueTrend = activeMilestone.issueTrend;
   const axis = issueChart.querySelector(".bar-chart__y-axis");
   const plot = issueChart.querySelector(".bar-chart__plot");
   const maxIssues = Math.max(...issueTrend.map((item) => item.issues));
-  const tickStep = maxIssues > 10 ? 10 : 1;
-  const axisMax = Math.ceil(maxIssues / tickStep) * tickStep;
+  const tickStep = 10;
+  const axisMax = Math.max(tickStep, Math.ceil(maxIssues / tickStep) * tickStep);
   const tickCount = axisMax / tickStep;
   const ticks = Array.from(
     { length: tickCount + 1 },
@@ -93,7 +286,7 @@ function renderIssueChart() {
         type="button"
         role="listitem"
         aria-label="${item.month}: ${item.issues} issues"
-        style="--bar-height: ${height}; --bar-index: ${issueTrend.indexOf(item)}"
+        style="--bar-height: ${height}"
       >
         <span class="bar-chart__bar">
           <span class="bar-chart__tooltip">${item.issues} issues</span>
@@ -105,6 +298,7 @@ function renderIssueChart() {
 }
 
 function renderDistributionChart() {
+  const issueDistribution = getSyncedIssueDistribution();
   const total = issueDistribution.reduce((sum, item) => sum + item.issues, 0);
   const radius = 76;
   let startAngle = 0;
@@ -126,7 +320,8 @@ function renderDistributionChart() {
   }
 
   const segments = issueDistribution
-    .map((item) => {
+    .filter((item) => item.issues > 0)
+    .map((item, index) => {
       const segmentAngle = (item.issues / total) * 360;
       const midAngle = startAngle + segmentAngle / 2;
       const endAngle = startAngle + segmentAngle;
@@ -138,7 +333,7 @@ function renderDistributionChart() {
         data-label="${item.label}"
         data-issues="${item.issues}"
         data-angle="${midAngle}"
-        style="--segment-index: ${issueDistribution.indexOf(item)}"
+        style="--segment-index: ${index}"
         d="${arcPath}"
         fill="none"
         stroke="${item.color}"
@@ -170,6 +365,18 @@ function renderDistributionChart() {
   bindDistributionChart();
 }
 
+function renderDistributionLegend() {
+  distributionLegend.innerHTML = getSyncedIssueDistribution()
+    .map((item) => {
+      const icon = distributionIcons[item.label] ?? distributionIcons.Feature;
+      return `<span>
+        <img src="${icon}" alt="" />
+        ${item.label}: ${item.issues}
+      </span>`;
+    })
+    .join("");
+}
+
 function setDistributionReadout(segment) {
   const tooltip = distributionChart.querySelector(".donut-chart__tooltip");
   if (!segment) {
@@ -191,6 +398,9 @@ function setDistributionReadout(segment) {
 }
 
 function getDistributionItemFromPoint(event) {
+  const issueDistribution = getSyncedIssueDistribution().filter(
+    (item) => item.issues > 0,
+  );
   const graphic = distributionChart.querySelector(".donut-chart__graphic");
   const rect = graphic.getBoundingClientRect();
   const centerX = rect.left + rect.width / 2;
@@ -204,6 +414,7 @@ function getDistributionItemFromPoint(event) {
   if (distance < innerRadius || distance > outerRadius) return null;
 
   const total = issueDistribution.reduce((sum, item) => sum + item.issues, 0);
+  if (total === 0) return null;
   const angle = (Math.atan2(dy, dx) * (180 / Math.PI) + 450) % 360;
   let currentAngle = 0;
 
@@ -249,16 +460,16 @@ function bindDistributionChart() {
     segment.addEventListener("mouseleave", () => {
       const activeSegment = activeDistributionLabel
         ? distributionChart.querySelector(
-            `.donut-chart__segment[data-label="${activeDistributionLabel}"]`,
-          )
+          `.donut-chart__segment[data-label="${activeDistributionLabel}"]`,
+        )
         : null;
       setDistributionReadout(activeSegment);
     });
     segment.addEventListener("blur", () => {
       const activeSegment = activeDistributionLabel
         ? distributionChart.querySelector(
-            `.donut-chart__segment[data-label="${activeDistributionLabel}"]`,
-          )
+          `.donut-chart__segment[data-label="${activeDistributionLabel}"]`,
+        )
         : null;
       setDistributionReadout(activeSegment);
     });
@@ -271,13 +482,6 @@ function createFeatureCard(item) {
         <img src="${item.image}" alt="${item.imageAlt}" />
       </div>`
     : "";
-  const prodMarkup =
-    item.showProd === false
-          ? ""
-          : `<span class="pill pill--blue" aria-label="Production environment">
-          <i class="ph ph-laptop" aria-hidden="true"></i>
-          <span>Deployed</span>
-        </span>`;
   const stgMarkup = item.stgUrl
     ? `<a class="pill pill--primary" href="${item.stgUrl}" target="_blank" rel="noopener noreferrer" aria-label="Open staging URL">
           <i class="ph ph-link" aria-hidden="true"></i>
@@ -290,15 +494,23 @@ function createFeatureCard(item) {
           <span>${item.ticket}</span>
         </a>`
     : "";
+  const badgeMarkup = item.showBadge
+    ? `<span class="pill pill--prod feature-card__badge" aria-label="Production environment">
+          <i class="ph ph-laptop" aria-hidden="true"></i>
+          <span>Deployed</span>
+        </span>`
+    : "";
 
   return `<article class="feature-card">
     <div class="feature-card__copy">
-      <h2>${item.title}</h2>
+      <div class="feature-card__header">
+        <h2>${item.title}</h2>
+        ${badgeMarkup}
+      </div>
       <p>${item.description}</p>
       <div class="feature-links">
         ${stgMarkup}
         ${ticketMarkup}
-        ${prodMarkup}
       </div>
     </div>
     ${imageMarkup}
@@ -306,7 +518,21 @@ function createFeatureCard(item) {
 }
 
 function renderFeatureList(tabName) {
-  featureList.innerHTML = releaseItems[tabName].map(createFeatureCard).join("");
+  featureList.innerHTML = activeMilestone.releaseItems[tabName]
+    .map(createFeatureCard)
+    .join("");
+}
+
+function renderTabCounts() {
+  const issueDistribution = getSyncedIssueDistribution();
+  tabs.forEach((tab) => {
+    const distributionLabel = tabDistributionLabels[tab.dataset.tab];
+    const distributionItem = issueDistribution.find(
+      (item) => item.label === distributionLabel,
+    );
+    const count = distributionItem?.issues ?? 0;
+    tab.querySelector("strong").textContent = count;
+  });
 }
 
 function setActiveTab(tabName) {
@@ -326,10 +552,82 @@ function setActiveTab(tabName) {
   }, 160);
 }
 
+function renderMilestonePage() {
+  activeDistributionLabel = null;
+  renderTabCounts();
+  renderIssueChart();
+  renderDistributionChart();
+  renderDistributionLegend();
+  renderFeatureList(activeTab);
+}
+
 tabs.forEach((tab) => {
   tab.addEventListener("click", () => setActiveTab(tab.dataset.tab));
 });
 
-renderIssueChart();
-renderDistributionChart();
-renderFeatureList(activeTab);
+milestoneSelect.addEventListener("click", () => {
+  const isOpen = milestoneDropdown.classList.contains("milestone-dropdown--open");
+  setMilestoneDropdownOpen(!isOpen);
+});
+
+milestoneSelect.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    setMilestoneDropdownOpen(false);
+    return;
+  }
+
+  if (event.key !== "ArrowDown" && event.key !== "Enter" && event.key !== " ") return;
+  event.preventDefault();
+  setMilestoneDropdownOpen(true);
+  const selectedOption = milestoneOptions.querySelector('[aria-selected="true"]');
+  const firstOption = milestoneOptions.querySelector(".milestone-dropdown__option");
+  (selectedOption ?? firstOption)?.focus();
+});
+
+milestoneOptions.addEventListener("click", (event) => {
+  const option = event.target.closest(".milestone-dropdown__option");
+  if (!option) return;
+  selectMilestone(option.dataset.milestoneId);
+  setMilestoneDropdownOpen(false);
+  milestoneSelect.focus({ preventScroll: true });
+});
+
+milestoneOptions.addEventListener("keydown", (event) => {
+  const options = Array.from(
+    milestoneOptions.querySelectorAll(".milestone-dropdown__option"),
+  );
+  const currentIndex = options.indexOf(document.activeElement);
+
+  if (event.key === "Escape") {
+    event.preventDefault();
+    setMilestoneDropdownOpen(false);
+    milestoneSelect.focus({ preventScroll: true });
+    return;
+  }
+
+  if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+    event.preventDefault();
+    const direction = event.key === "ArrowDown" ? 1 : -1;
+    const nextIndex = (currentIndex + direction + options.length) % options.length;
+    options[nextIndex]?.focus();
+    return;
+  }
+
+  if (event.key === "Enter" || event.key === " ") {
+    event.preventDefault();
+    document.activeElement?.click();
+  }
+});
+
+document.addEventListener("click", (event) => {
+  if (milestoneDropdown.contains(event.target)) return;
+  setMilestoneDropdownOpen(false);
+});
+
+window.addEventListener("popstate", () => {
+  selectMilestone(getMilestoneFromUrl().id, { updateUrl: false });
+});
+
+activeMilestone = getMilestoneFromUrl();
+renderMilestoneOptions();
+renderMilestonePage();
