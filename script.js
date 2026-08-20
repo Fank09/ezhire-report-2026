@@ -14,7 +14,7 @@ const milestones = [
     issueDistribution: [
       { label: "Feature", issues: 1, color: "#DB6258" },
       { label: "UX/UI", issues: 2, color: "#E88981" },
-      { label: "Admin", issues: 1, color: "#F2B4AF" },
+      { label: "Admin/Backend", issues: 1, color: "#F2B4AF" },
     ],
     // Feature cards shown in the "Cycle Release Issues" section.
     releaseItems: {
@@ -80,13 +80,13 @@ const milestones = [
     label: "August 6, 2026",
     issueTrend: [
       { month: "Jun", issues: 9 },
-      { month: "Jul", issues: 6 },
+      { month: "Jul", issues: 5 },
       { month: "Aug", issues: 3 },
     ],
     issueDistribution: [
       { label: "Feature", issues: 1, color: "#DB6258" },
       { label: "UX/UI", issues: 1, color: "#E88981" },
-      { label: "Admin", issues: 1, color: "#F2B4AF" },
+      { label: "Admin/Backend", issues: 1, color: "#F2B4AF" },
     ],
     // Feature cards shown in the "Cycle Release Issues" section.
     releaseItems: {
@@ -116,13 +116,13 @@ const milestones = [
           image: "images/06-8-2026/job-topgun.png",
           imageAlt: "Synced with Job Topgun",
         },
-                // DPA & TOU card.
+        // DPA & TOU card.
         {
           title: "Update DPA and ToU",
           description:
             "Update Data Processing Agreement (DPA) and Terms of Use (ToU) for expansion to other countries",
           ticket: "EH-143",
-          showBadge: false,
+          showBadge: true,
           stgUrl: "https://stg.ezhire.asia/en/dashboard",
           ticketUrl: "https://abroaders.backlog.com/view/EH-143",
           image: "images/06-8-2026/dpa-tou.png",
@@ -161,6 +161,99 @@ const milestones = [
       ],
     },
   },
+  {
+    id: "2026-08-20",
+    label: "August 20, 2026",
+    issueTrend: [
+      { month: "Jun", issues: 9 },
+      { month: "Jul", issues: 5 },
+      { month: "Aug", issues: 5 },
+    ],
+    issueDistribution: [
+      { label: "Feature", issues: 0, color: "#DB6258" },
+      { label: "UX/UI", issues: 0, color: "#E88981" },
+      { label: "Admin/Backend", issues: 0, color: "#F2B4AF" },
+    ],
+    // Feature cards shown in the "Cycle Release Issues" section.
+    releaseItems: {
+      // Feature tab cards.
+      feature: [
+        // Automated creation and filling by dropping resume
+        {
+          title: "Automated creation and filling by dropping resume",
+          description:
+            "Upload a candidate’s resume to automatically extract and pre-fill talent information, making it faster and easier to add new candidates to the system.",
+          ticket: "EH-155",
+          showBadge: false,
+          stgUrl: "https://stg.ezhire.asia/en/talents/new",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-155",
+          image: "images/20-8-2026/drop-resume.png",
+          imageAlt: "Automated creation and filling by dropping resume",
+        },
+      ],
+      // UX/UI tab cards.
+      ux: [
+        // Help Page of Google Calendar Connect and Link
+        {
+          title: "Help Page of Google Calendar Connect and Link",
+          description:
+            "Provide users with guidance on how to connect and link their Google Calendar, ensuring a seamless scheduling experience.",
+          ticket: "EH-149",
+          showBadge: true,
+          stgUrl: "https://stg.ezhire.asia/en/talents/new",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-149",
+          images: [
+            {
+              src: "images/20-8-2026/calendar-1.png",
+              alt: "Google Calendar help page connection instructions",
+            },
+            {
+              src: "images/20-8-2026/calendar-2.png",
+              alt: "Google Calendar help page linking instructions",
+            },
+          ],
+        },
+      ],
+      // Admin tab cards.
+      admin: [
+        // Obtain EZHire Domain and Redirecting
+        {
+          title: "Obtain EZHire Domain and Redirecting",
+          description:
+            " Added domain migrations (Redirection from ats.reeracoen.tech to www.ezhire.asia).",
+          ticket: "EH-124",
+          showBadge: true,
+          ticketUrl: "https://abroaders.backlog.com/view/EH-124",
+          image: "images/20-8-2026/domain.png",
+          imageAlt: "Obtain EZHire Domain and Redirecting",
+        },
+                // Add "Status" on Companies and Searchable by "Status"
+        {
+          title: "Add 'Status' on Companies and Searchable by 'Status'",
+          description:
+            "Add a “Status” field to Companies and allow users to search/filter companies by Status (Engage, New, Follow, Dormant)",
+          ticket: "EH-153",
+          showBadge: true,
+          stgUrl: "https://stg.ezhire.asia/admin/companies",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-153",
+          image: "images/20-8-2026/comp-status.png",
+          imageAlt: "Add 'Status' on Companies and Searchable by 'Status'",
+        },
+               // Change order of jobs by updated date"
+        {
+          title: "Change order of jobs by updated date",
+          description:
+            "Change the order of jobs to be sorted by their updated date, ensuring the most recently updated jobs appear first.",
+          ticket: "EH-148",
+          showBadge: true,
+          stgUrl: "https://stg.ezhire.asia/admin/jobs",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-148",
+          image: "images/20-8-2026/job-order.png",
+          imageAlt: "Change order of jobs by updated date",
+        },
+      ],
+    },
+  },
 ];
 
 const milestoneDropdown = document.querySelector("#milestone-dropdown");
@@ -179,18 +272,24 @@ let activeDistributionLabel = null;
 const distributionIcons = {
   Feature: "images/figma-assets/dot-feature.svg",
   "UX/UI": "images/figma-assets/dot-ux.svg",
-  Admin: "images/figma-assets/dot-admin.svg",
+  "Admin/Backend": "images/figma-assets/dot-admin.svg",
 };
 
 const tabDistributionLabels = {
   feature: "Feature",
   ux: "UX/UI",
-  admin: "Admin",
+  admin: "Admin/Backend",
 };
 
 const distributionLabelTabs = Object.fromEntries(
   Object.entries(tabDistributionLabels).map(([tabName, label]) => [label, tabName]),
 );
+
+function getLatestMilestone() {
+  return [...milestones].sort(
+    (first, second) => new Date(second.id) - new Date(first.id),
+  )[0];
+}
 
 function getSyncedIssueDistribution() {
   return activeMilestone.issueDistribution.map((item) => {
@@ -202,7 +301,7 @@ function getSyncedIssueDistribution() {
 
 function getMilestoneFromUrl() {
   const milestoneId = new URLSearchParams(window.location.search).get("milestone");
-  return milestones.find((milestone) => milestone.id === milestoneId) ?? milestones[0];
+  return milestones.find((milestone) => milestone.id === milestoneId) ?? getLatestMilestone();
 }
 
 function updateMilestoneUrl(milestoneId) {
@@ -477,9 +576,17 @@ function bindDistributionChart() {
 }
 
 function createFeatureCard(item) {
-  const imageMarkup = item.image
-    ? `<div class="feature-card__image">
-        <img src="${item.image}" alt="${item.imageAlt}" />
+  const images = item.images ?? (
+    item.image ? [{ src: item.image, alt: item.imageAlt }] : []
+  );
+  const hasMultipleImages = images.length > 1;
+  const imageMarkup = images.length
+    ? `<div class="feature-card__image${hasMultipleImages ? " feature-card__image--multi" : ""}">
+        ${images
+      .map((image) => `<div class="feature-card__image-frame">
+            <img src="${image.src}" alt="${image.alt}" />
+          </div>`)
+      .join("")}
       </div>`
     : "";
   const stgMarkup = item.stgUrl

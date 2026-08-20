@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://unpkg.com/@phosphor-icons/web@2.1.2/src/regular/style.css"
     />
-    <link rel="stylesheet" href="styles.css?v=custom-milestone-dropdown-2" />
+    <link rel="stylesheet" href="styles.css?v=per-image-frame-2" />
   </head>
   <body>
     <main class="release-page" aria-labelledby="page-title">
@@ -111,7 +111,7 @@
               data-tab="admin"
             >
               <strong>1</strong>
-              <span>Admin</span>
+              <span>Admin/Backend</span>
             </button>
           </div>
         </section>
@@ -131,6 +131,10 @@
       <img src="images/figma-assets/ats-logo.png" alt="EZHire" />
       <p>Copyright @ 2026 EZHire. All rights reserved.</p>
     </footer>
-    <script src="script.js?v=latest-milestone-first"></script>
+    <script>
+      const releaseScript = document.createElement("script");
+      releaseScript.src = `script.js?v=${Date.now()}`;
+      document.body.appendChild(releaseScript);
+    </script>
   </body>
 </html>

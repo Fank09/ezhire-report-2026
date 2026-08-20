@@ -689,7 +689,7 @@ button {
 
 .stat-card span {
   color: var(--black);
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -816,10 +816,19 @@ button {
 }
 
 .feature-card__image {
+  display: grid;
+  gap: 16px;
+}
+
+.feature-card__image-frame {
   overflow: hidden;
   border: 1px solid var(--gray-300);
   background: var(--white);
   box-shadow: 0 10px 20px rgba(149, 157, 165, 0.16);
+}
+
+.feature-card__image--multi .feature-card__image-frame {
+  border-color: var(--gray-300);
 }
 
 .feature-card__image img {
@@ -1054,7 +1063,7 @@ button {
   }
 
   .stat-card span {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .feature-band {

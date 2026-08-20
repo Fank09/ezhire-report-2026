@@ -1,0 +1,294 @@
+{
+  "milestones": [
+    {
+      "id": "2026-07-23",
+      "label": "July 23, 2026",
+      "issueTrend": [
+        {
+          "month": "Jan",
+          "issues": 6
+        },
+        {
+          "month": "Feb",
+          "issues": 30
+        },
+        {
+          "month": "Mar",
+          "issues": 6
+        },
+        {
+          "month": "Apr",
+          "issues": 7
+        },
+        {
+          "month": "May",
+          "issues": 3
+        },
+        {
+          "month": "Jun",
+          "issues": 9
+        },
+        {
+          "month": "Jul",
+          "issues": 5
+        }
+      ],
+      "issueDistribution": [
+        {
+          "label": "Feature",
+          "issues": 1,
+          "color": "#DB6258"
+        },
+        {
+          "label": "UX/UI",
+          "issues": 2,
+          "color": "#E88981"
+        },
+        {
+          "label": "Admin/Backend",
+          "issues": 1,
+          "color": "#F2B4AF"
+        }
+      ],
+      "releaseItems": {
+        "feature": [
+          {
+            "title": "Google Calendar Connect",
+            "description": "Connect Google Calendar with EZHire to schedule interviews, manage appointments, and keep interview events automatically synced in one place.",
+            "ticket": "EH-119",
+            "showBadge": true,
+            "stgUrl": "https://stg-ats.reeracoen.tech/en/companies/members/40/edit",
+            "ticketUrl": "https://abroaders.backlog.com/view/EH-119",
+            "image": "images/23-7-2026/google-cld.png",
+            "imageAlt": "EZHire Google Calendar integration screen"
+          }
+        ],
+        "ux": [
+          {
+            "title": "Fix Talent Pool Scoreboard",
+            "description": "Center the Talent Pool scoreboard so the metrics align cleanly within the dashboard card.",
+            "ticket": "EH-126",
+            "showBadge": false,
+            "stgUrl": "https://stg-ats.reeracoen.tech/dashboard",
+            "ticketUrl": "https://abroaders.backlog.com/view/EH-126",
+            "image": "images/23-7-2026/talent-pool-scoreboard.png",
+            "imageAlt": "EZHire dashboard showing the Talent Pool scoreboard card"
+          },
+          {
+            "title": "Search Improvement",
+            "description": "Improve the search experience with clearer filters and dynamically updated results.",
+            "ticket": "EH-136",
+            "showBadge": false,
+            "stgUrl": "https://stg-ats.reeracoen.tech/en/jobs",
+            "ticketUrl": "https://abroaders.backlog.com/view/EH-136",
+            "image": "images/23-7-2026/search-improvement.png",
+            "imageAlt": "EZHire jobs page showing improved search filters and dynamic results"
+          }
+        ],
+        "admin": [
+          {
+            "title": "Bulk Job Close",
+            "description": "Add multi-select controls so admins can close multiple job items in one action.",
+            "ticket": "EH-135",
+            "ticketUrl": "https://abroaders.backlog.com/view/EH-135",
+            "image": "images/23-7-2026/bulk-job-close.png",
+            "imageAlt": "Admin company members page showing selected rows for bulk job close actions"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2026-08-06",
+      "label": "August 6, 2026",
+      "issueTrend": [
+        {
+          "month": "Jun",
+          "issues": 9
+        },
+        {
+          "month": "Jul",
+          "issues": 5
+        },
+        {
+          "month": "Aug",
+          "issues": 3
+        }
+      ],
+      "issueDistribution": [
+        {
+          "label": "Feature",
+          "issues": 1,
+          "color": "#DB6258"
+        },
+        {
+          "label": "UX/UI",
+          "issues": 1,
+          "color": "#E88981"
+        },
+        {
+          "label": "Admin/Backend",
+          "issues": 1,
+          "color": "#F2B4AF"
+        }
+      ],
+      "releaseItems": {
+        "feature": [
+          {
+            "title": "Bulk Candidate Close",
+            "description": "feature that allows users to close multiple candidates at once",
+            "ticket": "EH-137",
+            "showBadge": true,
+            "stgUrl": "https://stg.ezhire.asia/en/selection_processes?selection_process_display=open",
+            "ticketUrl": "https://abroaders.backlog.com/view/EH-137",
+            "image": "images/06-8-2026/bulk-cdd-close.png",
+            "imageAlt": "Bulk Candidate Close"
+          },
+          {
+            "title": "Synced with Job Topgun",
+            "description": "feature that allows users to close multiple candidates at once",
+            "ticket": "EH-134",
+            "showBadge": true,
+            "stgUrl": "https://stg.ezhire.asia/en/selection_processes?selection_process_display=open&source=jobtopgun",
+            "ticketUrl": "https://abroaders.backlog.com/view/EH-134",
+            "image": "images/06-8-2026/job-topgun.png",
+            "imageAlt": "Synced with Job Topgun"
+          },
+          {
+            "title": "Update DPA and ToU",
+            "description": "Update Data Processing Agreement (DPA) and Terms of Use (ToU) for expansion to other countries",
+            "ticket": "EH-143",
+            "showBadge": true,
+            "stgUrl": "https://stg.ezhire.asia/en/dashboard",
+            "ticketUrl": "https://abroaders.backlog.com/view/EH-143",
+            "image": "images/06-8-2026/dpa-tou.png",
+            "imageAlt": "Update DPA and ToU"
+          }
+        ],
+        "ux": [
+          {
+            "title": "All/Ongoing Filter on Dashboard",
+            "description": "feature that allows users to filter all or ongoing items on the dashboard",
+            "ticket": "EH-130",
+            "showBadge": true,
+            "stgUrl": "https://stg.ezhire.asia/en/dashboard",
+            "ticketUrl": "https://abroaders.backlog.com/view/EH-130",
+            "image": "images/06-8-2026/filter-dashboard.png",
+            "imageAlt": "All/Ongoing Filter on Dashboard"
+          }
+        ],
+        "admin": [
+          {
+            "title": "Retention for Log Data",
+            "description": "Automatically log view and export events on candidate data, capturing: who (user/account), when (timestamp), what (which candidate record).",
+            "ticket": "EH-133",
+            "showBadge": true,
+            "stgUrl": " ",
+            "ticketUrl": "https://abroaders.backlog.com/view/EH-133",
+            "image": "images/06-8-2026/log-data.png",
+            "imageAlt": "Retention for Log Data"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2026-08-20",
+      "label": "August 20, 2026",
+      "issueTrend": [
+        {
+          "month": "Jun",
+          "issues": 9
+        },
+        {
+          "month": "Jul",
+          "issues": 5
+        },
+        {
+          "month": "Aug",
+          "issues": 3
+        }
+      ],
+      "issueDistribution": [
+        {
+          "label": "Feature",
+          "issues": 0,
+          "color": "#DB6258"
+        },
+        {
+          "label": "UX/UI",
+          "issues": 0,
+          "color": "#E88981"
+        },
+        {
+          "label": "Admin/Backend",
+          "issues": 0,
+          "color": "#F2B4AF"
+        }
+      ],
+      "releaseItems": {
+        "feature": [
+          {
+            "title": "Automated creation and filling by dropping resume",
+            "description": "Upload a candidate’s resume to automatically extract and pre-fill talent information, making it faster and easier to add new candidates to the system.",
+            "ticket": "EH-155",
+            "showBadge": false,
+            "stgUrl": "https://stg.ezhire.asia/en/talents/new",
+            "ticketUrl": "https://abroaders.backlog.com/view/EH-155",
+            "image": "images/20-8-2026/drop-resume.png",
+            "imageAlt": "Automated creation and filling by dropping resume"
+          }
+        ],
+        "ux": [
+          {
+            "title": "Help Page of Google Calendar Connect and Link",
+            "description": "Provide users with guidance on how to connect and link their Google Calendar, ensuring a seamless scheduling experience.",
+            "ticket": "EH-149",
+            "showBadge": false,
+            "stgUrl": "https://stg.ezhire.asia/en/talents/new",
+            "ticketUrl": "https://abroaders.backlog.com/view/EH-149",
+            "images": [
+              {
+                "src": "images/20-8-2026/calendar-1.png",
+                "alt": "Google Calendar help page connection instructions"
+              },
+              {
+                "src": "images/20-8-2026/calendar-2.png",
+                "alt": "Google Calendar help page linking instructions"
+              }
+            ]
+          }
+        ],
+        "admin": [
+          {
+            "title": "Obtain EZHire Domain and Redirecting",
+            "description": " Added domain migrations (Redirection from ats.reeracoen.tech to www.ezhire.asia).",
+            "ticket": "EH-124",
+            "showBadge": true,
+            "ticketUrl": "https://abroaders.backlog.com/view/EH-124",
+            "image": "images/20-8-2026/domain.png",
+            "imageAlt": "Obtain EZHire Domain and Redirecting"
+          },
+          {
+            "title": "Add 'Status' on Companies and Searchable by 'Status'",
+            "description": "Add a “Status” field to Companies and allow users to search/filter companies by Status (Engage, New, Follow, Dormant)",
+            "ticket": "EH-153",
+            "showBadge": true,
+            "stgUrl": "https://stg.ezhire.asia/admin/companies",
+            "ticketUrl": "https://abroaders.backlog.com/view/EH-153",
+            "image": "images/20-8-2026/comp-status.png",
+            "imageAlt": "Add 'Status' on Companies and Searchable by 'Status'"
+          },
+          {
+            "title": "Add Updated Date to Job Order List",
+            "description": "Display each job order's updated date in the admin job order list so admins can quickly review recent changes.",
+            "ticket": "EH-154",
+            "showBadge": true,
+            "stgUrl": "https://stg.ezhire.asia/admin/jobs",
+            "ticketUrl": "https://abroaders.backlog.com/view/EH-154",
+            "image": "images/20-8-2026/job-order.png",
+            "imageAlt": "Admin job order list showing updated dates for each job order"
+          }
+        ]
+      }
+    }
+  ]
+}
