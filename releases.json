@@ -289,6 +289,80 @@
           }
         ]
       }
+    },
+    {
+      "id": "2026-09-03",
+      "label": "September 3, 2026",
+      "issueTrend": [
+        {
+          "month": "Aug",
+          "issues": 5
+        },
+        {
+          "month": "Sep",
+          "issues": 3
+        }
+      ],
+      "issueDistribution": [
+        {
+          "label": "Feature",
+          "issues": 1,
+          "color": "#DB6258"
+        },
+        {
+          "label": "UX/UI",
+          "issues": 1,
+          "color": "#E88981"
+        },
+        {
+          "label": "Admin/Backend",
+          "issues": 1,
+          "color": "#F2B4AF"
+        }
+      ],
+      "releaseItems": {
+        "feature": [
+          {
+            "title": "Resume Parsing and Candidate Prefill",
+            "description": "Upload a candidate’s resume to automatically extract key details and pre-fill the candidate profile, reducing manual data entry.",
+            "showBadge": false,
+            "showReviewBadge": true,
+            "stgUrl": "https://stg.ezhire.asia/en/talents/new",
+            "image": "images/20-8-2026/drop-resume.png",
+            "imageAlt": "EZHire candidate profile with resume upload and prefilled details"
+          }
+        ],
+        "ux": [
+          {
+            "title": "Google Calendar Connection Guidance",
+            "description": "Add clear in-product guidance for connecting and linking Google Calendar so users can complete setup with confidence.",
+            "showBadge": false,
+            "showReviewBadge": true,
+            "stgUrl": "https://stg.ezhire.asia/en/talents/new",
+            "images": [
+              {
+                "src": "images/20-8-2026/calendar-1.png",
+                "alt": "Google Calendar connection guidance"
+              },
+              {
+                "src": "images/20-8-2026/calendar-2.png",
+                "alt": "Google Calendar linking guidance"
+              }
+            ]
+          }
+        ],
+        "admin": [
+          {
+            "title": "Company Status Filtering",
+            "description": "Give admins a clear Status field and searchable filters for quickly organizing companies by Engage, New, Follow, or Dormant.",
+            "showBadge": false,
+            "showReviewBadge": true,
+            "stgUrl": "https://stg.ezhire.asia/admin/companies",
+            "image": "images/20-8-2026/comp-status.png",
+            "imageAlt": "EZHire admin companies page with status filtering"
+          }
+        ]
+      }
     }
   ]
 }

@@ -635,6 +635,10 @@ button {
   margin-top: 44px;
 }
 
+.stats-section-shell {
+  background: var(--white);
+}
+
 .stats-section h2 {
   margin: 44px 0 0;
   font-size: 32px;
@@ -708,6 +712,47 @@ button {
   color: var(--white);
 }
 
+.go-up-button {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 30;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 50%;
+  background: var(--black);
+  color: var(--white);
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition: opacity 180ms ease, transform 180ms ease, background-color 180ms ease;
+}
+
+.go-up-button--visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.go-up-button:hover {
+  background: var(--primary-600);
+}
+
+.go-up-button:focus-visible {
+  outline: 4px solid rgba(219, 98, 88, 0.28);
+  outline-offset: 4px;
+}
+
+.go-up-button .ph {
+  font-size: 20px;
+  line-height: 1;
+}
+
 .feature-band {
   padding: 56px 0;
   background: var(--gray-50);
@@ -763,6 +808,23 @@ button {
   flex: 0 0 auto;
   border-radius: 100px;
   cursor: default;
+}
+
+.feature-card .feature-card__badge--review {
+  min-height: 32px;
+  gap: 9px;
+  border-radius: 16px;
+  background: #f3f4f6;
+  color: #394050;
+  font-size: 1rem;
+  line-height: 1.2;
+  padding: 9px 24px;
+}
+
+.feature-card .feature-card__badge--review .ph {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
 }
 
 .feature-card p {
@@ -1064,6 +1126,11 @@ button {
 
   .stat-card span {
     font-size: 24px;
+  }
+
+  .go-up-button {
+    right: 16px;
+    bottom: 16px;
   }
 
   .feature-band {

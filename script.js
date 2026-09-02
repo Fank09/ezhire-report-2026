@@ -227,7 +227,7 @@ const milestones = [
           image: "images/20-8-2026/domain.png",
           imageAlt: "Obtain EZHire Domain and Redirecting",
         },
-                // Add "Status" on Companies and Searchable by "Status"
+        // Add "Status" on Companies and Searchable by "Status"
         {
           title: "Add 'Status' on Companies and Searchable by 'Status'",
           description:
@@ -239,7 +239,7 @@ const milestones = [
           image: "images/20-8-2026/comp-status.png",
           imageAlt: "Add 'Status' on Companies and Searchable by 'Status'",
         },
-               // Change order of jobs by updated date"
+        // Change order of jobs by updated date"
         {
           title: "Change order of jobs by updated date",
           description:
@@ -250,6 +250,135 @@ const milestones = [
           ticketUrl: "https://abroaders.backlog.com/view/EH-148",
           image: "images/20-8-2026/job-order.png",
           imageAlt: "Change order of jobs by updated date",
+        },
+      ],
+    },
+  },
+  {
+    id: "2026-09-03",
+    label: "September 3, 2026",
+    issueTrend: [
+      { month: "Jun", issues: 9 },
+      { month: "Jul", issues: 5 },
+      { month: "Aug", issues: 8 },
+      { month: "Sep", issues: 5 },
+    ],
+    issueDistribution: [
+      { label: "Feature", issues: 1, color: "#DB6258" },
+      { label: "UX/UI", issues: 1, color: "#E88981" },
+      { label: "Admin/Backend", issues: 1, color: "#F2B4AF" },
+    ],
+    // One representative example is shown in each release category.
+    releaseItems: {
+
+      feature: [
+        // Create Job by dropping file card.
+        {
+          title: "Create Job by Dropping file",
+          description:
+            "Allow users to create a new job by dropping a file, streamlining the job creation process and improving efficiency.",
+          ticket: "EH-162",
+          showReviewBadge: true,
+          showBadge: false,
+          stgUrl: "https://stg.ezhire.asia/en/jobs/new",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-162",
+          images: [
+            {
+              src: "images/03-9-2026/job-drop.png",
+              alt: "Create Job by dropping file",
+            },
+            {
+              src: "images/03-9-2026/job-drop-2.png",
+              alt: "Create Job by dropping file",
+            },
+          ],
+        },
+        // Add job application source section in Talent Setting card.
+        {
+          title: "Add job application source management in Talent Setting",
+          description:
+            "Review and manage job application sources, such as job boards and other recruitment channels.",
+          ticket: "EH-142",
+          showReviewBadge: true,
+          showBadge: false,
+          stgUrl: "https://stg.ezhire.asia/en/jobs/new",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-142",
+          image: "images/03-9-2026/job-source.png",
+          imageAlt: "Add job application source management in Talent Setting",
+        },
+      ],
+      ux: [
+        // Add contact email info to agreement with DPA and ToU popup card.
+        {
+          title: "Add contact email info to agreement with DPA and ToU popup",
+          description:
+            "Add a contact email address to the DPA and Terms of Use agreement popup so users can request assistance or further information.",
+          ticket: "EH-166",
+          showBadge: true,
+          stgUrl: "",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-166",
+          image: "images/03-9-2026/popup.png",
+          imageAlt: "Add contact email info to agreement with DPA and ToU popup",
+        },
+
+      ],
+      admin: [
+        // Add Master for Process on Selection Process.
+        {
+          title: "Add Master for Process on Selection Process",
+          description:
+            "Help Client Users to set Master for each customized process on Selection Process",
+          ticket: "EH-159",
+          showReviewBadge: true,
+          showBadge: false,
+          stgUrl: "https://stg.ezhire.asia/admin/jobs?q%5Bcompany_id_eq%5D=6&q%5Bstatus_eq%5D=0&commit=Filter&order=updated_at_desc",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-159",
+          images: [
+            {
+              src: "images/03-9-2026/master.png",
+              alt: "Add Master for Process on Selection Process",
+            },
+            {
+              src: "images/03-9-2026/master-2.png",
+              alt: "Add Master for Process on Selection Process",
+            },
+          ],
+        },
+        // Make Items searchable by Country
+        {
+          title: "Make Items searchable by Country",
+          description:
+            "Make items searchable by country so users can easily find relevant information based on their location.",
+          ticket: "EH-163",
+          showBadge: true,
+          stgUrl: "https://stg.ezhire.asia/admin/company_applications?q[country_id_in]=4",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-163",
+          image: "images/03-9-2026/comp-search.png",
+          imageAlt: "Make Items searchable by Country",
+        },
+        // Remove items from searching criteria
+        {
+          title: "Remove items from searching criteria",
+          description:
+            "Remove items from searching criteria: Company Logo, Phone Number and Privacy Policy URL.",
+          ticket: "EH-167",
+          showBadge: true,
+          stgUrl: "https://stg.ezhire.asia/admin/companies",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-167",
+          image: "images/03-9-2026/remove.png",
+          imageAlt: "Remove items from searching criteria",
+        },
+        // Remove items from searching criteria
+        {
+          title: "Adjustment of time format on Admin page",
+          description:
+            "Adjust the time format displayed on the Admin page for better readability.",
+          ticket: "EH-164",
+          showBadge: true,
+          stgUrl: "https://stg.ezhire.asia/admin/companies",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-164",
+          image: "images/03-9-2026/time.png",
+          imageAlt: "Adjustment of time format on Admin page",
         },
       ],
     },
@@ -265,9 +394,35 @@ const featureList = document.querySelector("#feature-list");
 const issueChart = document.querySelector("#issue-chart");
 const distributionChart = document.querySelector("#distribution-chart");
 const distributionLegend = document.querySelector("#distribution-legend");
+const statsSection = document.querySelector(".stats-section");
+const goUpButton = document.querySelector("#go-up-button");
 let activeMilestone = milestones[0];
 let activeTab = "feature";
 let activeDistributionLabel = null;
+
+let goUpButtonFrame = null;
+function updateGoUpButton() {
+  goUpButtonFrame = null;
+  if (!goUpButton) return;
+
+  const isAtBottom = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 8;
+  goUpButton.classList.toggle("go-up-button--visible", isAtBottom);
+  goUpButton.setAttribute("aria-hidden", String(!isAtBottom));
+}
+
+window.addEventListener(
+  "scroll",
+  () => {
+    if (goUpButtonFrame !== null) return;
+    goUpButtonFrame = window.requestAnimationFrame(updateGoUpButton);
+  },
+  { passive: true },
+);
+window.addEventListener("resize", updateGoUpButton);
+goUpButton?.addEventListener("click", () => {
+  statsSection?.scrollIntoView({ behavior: "smooth", block: "start" });
+});
+updateGoUpButton();
 
 const distributionIcons = {
   Feature: "images/figma-assets/dot-feature.svg",
@@ -601,12 +756,17 @@ function createFeatureCard(item) {
           <span>${item.ticket}</span>
         </a>`
     : "";
-  const badgeMarkup = item.showBadge
-    ? `<span class="pill pill--prod feature-card__badge" aria-label="Production environment">
-          <i class="ph ph-laptop" aria-hidden="true"></i>
-          <span>Deployed</span>
+  const badgeMarkup = item.showReviewBadge
+    ? `<span class="pill feature-card__badge feature-card__badge--review" aria-label="In Review status">
+          <i class="ph ph-eye" aria-hidden="true"></i>
+          <span>In Review</span>
         </span>`
-    : "";
+    : item.showBadge
+      ? `<span class="pill pill--prod feature-card__badge" aria-label="Production environment">
+            <i class="ph ph-laptop" aria-hidden="true"></i>
+            <span>Deployed</span>
+          </span>`
+      : "";
 
   return `<article class="feature-card">
     <div class="feature-card__copy">

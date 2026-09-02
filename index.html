@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://unpkg.com/@phosphor-icons/web@2.1.2/src/regular/style.css"
     />
-    <link rel="stylesheet" href="styles.css?v=per-image-frame-2" />
+    <link rel="stylesheet" href="styles.css?v=go-up-button-1" />
   </head>
   <body>
     <main class="release-page" aria-labelledby="page-title">
@@ -76,8 +76,11 @@
             <div class="chart-legend" id="distribution-legend" aria-label="Issue categories"></div>
           </article>
         </div>
+      </section>
 
-        <section class="stats-section" aria-labelledby="stats-title">
+      <section class="stats-section-shell" aria-label="Release issue filters">
+        <div class="container">
+          <section class="stats-section" aria-label="Release categories">
           <h2 id="stats-title">Cycle Release Issues</h2>
           <div class="stats" role="tablist" aria-label="Release categories">
             <button
@@ -114,7 +117,8 @@
               <span>Admin/Backend</span>
             </button>
           </div>
-        </section>
+          </section>
+        </div>
       </section>
       <section class="feature-band">
         <div class="container">
@@ -126,6 +130,9 @@
           ></div>
         </div>
       </section>
+      <button class="go-up-button" id="go-up-button" type="button" aria-label="Back to release categories" aria-hidden="true">
+        <i class="ph ph-caret-up" aria-hidden="true"></i>
+      </button>
     </main>
     <footer class="site-footer">
       <img src="images/figma-assets/ats-logo.png" alt="EZHire" />
