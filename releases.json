@@ -363,6 +363,38 @@
           }
         ]
       }
+    },
+    {
+      "id": "2026-09-17",
+      "label": "September 17, 2026",
+      "issueTrend": [
+        {
+          "month": "Sep",
+          "issues": 0
+        }
+      ],
+      "issueDistribution": [
+        {
+          "label": "Feature",
+          "issues": 0,
+          "color": "#DB6258"
+        },
+        {
+          "label": "UX/UI",
+          "issues": 0,
+          "color": "#E88981"
+        },
+        {
+          "label": "Admin/Backend",
+          "issues": 0,
+          "color": "#F2B4AF"
+        }
+      ],
+      "releaseItems": {
+        "feature": [],
+        "ux": [],
+        "admin": []
+      }
     }
   ]
 }

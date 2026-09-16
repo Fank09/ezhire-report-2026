@@ -383,6 +383,84 @@ const milestones = [
       ],
     },
   },
+  {
+    id: "2026-09-17",
+    label: "September 17, 2026",
+    issueTrend: [
+      { month: "Jun", issues: 9 },
+      { month: "Jul", issues: 5 },
+      { month: "Aug", issues: 8 },
+      { month: "Sep", issues: 10 },
+    ],
+    issueDistribution: [
+      { label: "Feature", issues: 0, color: "#DB6258" },
+      { label: "UX/UI", issues: 0, color: "#E88981" },
+      { label: "Admin/Backend", issues: 0, color: "#F2B4AF" },
+    ],
+    releaseItems: {
+      feature: [],
+      ux: [],
+      admin: [
+        // Prepare /vn environment
+        {
+          title: "Prepare Vietnam branch environment",
+          description:
+            "Prepare the Vietnam branch environment for EZHire, ensuring that all necessary configurations and settings are in place for smooth operation.",
+          ticket: "EH-168",
+          showReviewBadge: false,
+          showBadge: true,
+          stgUrl: "",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-168",
+          images: [
+            {
+              src: "images/17-9-2026/vn-1.png",
+              alt: "Prepare Vietnam branch environment",
+            },
+            {
+              src: "images/17-9-2026/vn-2.png",
+              alt: "Prepare Vietnam branch environment",
+            },
+            {
+              src: "images/17-9-2026/vn-3.png",
+              alt: "Prepare Vietnam branch environment",
+            },
+          ],
+        },
+        // Replace email address for job board synchronization
+        {
+          title: "Replace email address for job board synchronization",
+          description:
+            "Replace the existing email accounts with the @ezhire.asia addresses for Job Board synchronization, ensuring that all job board communications are properly routed through the new domain.",
+          ticket: "EH-161",
+          showReviewBadge: false,
+          showBadge: true,
+          stgUrl: "",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-161",
+        },
+        // Add Selection Process on Admin page
+        {
+          title: "Add Selection Process on Admin page",
+          description:
+            "Add the Selection Process feature on the Admin page, allowing administrators to manage and track the selection process for job applicants more effectively.",
+          ticket: "EH-170",
+          showReviewBadge: false,
+          showBadge: true,
+          stgUrl: "",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-170",
+          images: [
+            {
+              src: "images/17-9-2026/select-1.png",
+              alt: "Add Selection Process on Admin page",
+            },
+            {
+              src: "images/17-9-2026/select-2.png",
+              alt: "Add Selection Process on Admin page",
+            },
+          ],
+        },
+      ],
+    },
+  },
 ];
 
 const milestoneDropdown = document.querySelector("#milestone-dropdown");
