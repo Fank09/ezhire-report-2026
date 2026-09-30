@@ -461,6 +461,117 @@ const milestones = [
       ],
     },
   },
+  {
+    id: "2026-10-01",
+    label: "October 1, 2026",
+    issueTrend: [
+      { month: "Jun", issues: 9 },
+      { month: "Jul", issues: 5 },
+      { month: "Aug", issues: 8 },
+      { month: "Sep", issues: 10 },
+      { month: "Oct", issues: 4 },
+    ],
+    issueDistribution: [
+      { label: "Feature", issues: 0, color: "#DB6258" },
+      { label: "UX/UI", issues: 0, color: "#E88981" },
+      { label: "Admin/Backend", issues: 0, color: "#F2B4AF" },
+    ],
+    releaseItems: {
+      feature: [
+        // Automated filling by submitted resume
+        {
+          title: "Automated filling by submitted resume",
+          description:
+            "Automatically extract information from the submitted resume in Job Board and fill in the relevant fields to EZHire.",
+          ticket: "EH-154",
+          showReviewBadge: false,
+          showBadge: true,
+          stgUrl: "https://stg.ezhire.asia/en/talents/5185",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-154",
+          images: [
+            {
+              src: "images/01-10-2026/extract.png",
+              alt: "Automated filling by submitted resume",
+            },
+            {
+              src: "images/01-10-2026/extract-2.png",
+              alt: "Automated filling by submitted resume",
+            },
+            {
+              src: "images/01-10-2026/extract-3.png",
+              alt: "Automated filling by submitted resume",
+            },
+          ],
+        },
+      ],
+      ux: [
+        // Update Help center for Job Sync's new email address
+        {
+          title: "Update Help center for Job Sync's new email address",
+          description:
+            "Upload a candidate’s resume to automatically extract and pre-fill talent information, making it faster and easier to add new candidates to the system.",
+          ticket: "EH-174",
+          showBadge: false,
+          stgUrl: "https://stg.ezhire.asia/en/help/job_boards",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-174",
+          images: [
+            {
+              src: "images/01-10-2026/jobsynce.png",
+              alt: "Help center for Job Sync's new email address",
+            },
+            {
+              src: "images/01-10-2026/jobsync-2.png",
+              alt: "Help center for Job Sync's new email address",
+            },
+          ],
+        },
+      ],
+      admin: [
+        // Enhancement for Dashboard
+        {
+          title: "Enhancement for Dashboard",
+          description:
+            "Enhance the dashboard to provide a more comprehensive overview of key metrics and insights of client users.",
+          ticket: "EH-172",
+          showReviewBadge: false,
+          showBadge: true,
+          stgUrl: "https://stg.ezhire.asia/admin/dashboard",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-172",
+          images: [
+            {
+              src: "images/01-10-2026/dashboard-1.png",
+              alt: "Enhancement for Dashboard",
+            },
+            {
+              src: "images/01-10-2026/dashboard-2.png",
+              alt: "Enhancement for Dashboard",
+            },
+          ],
+        },
+        //  Notification to VN companies
+        {
+          title: " Notification to VN companies",
+          description:
+            "Adjust to send notification such as company registration for VN companies to email: info@reeracoen.com.vn",
+          ticket: "EH-176",
+          showReviewBadge: false,
+          showBadge: true,
+          stgUrl: "",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-176",
+          images: [
+            {
+              src: "images/01-10-2026/email-1.png",
+              alt: " Notification to VN companies",
+            },
+            {
+              src: "images/01-10-2026/email-2.png",
+              alt: " Notification to VN companies",
+            },
+          ],
+        },
+      ],
+    },
+  },
 ];
 
 const milestoneDropdown = document.querySelector("#milestone-dropdown");
