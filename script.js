@@ -572,6 +572,100 @@ const milestones = [
       ],
     },
   },
+  {
+    id: "2026-10-15",
+    label: "October 15, 2026",
+    issueTrend: [
+      { month: "Jun", issues: 9 },
+      { month: "Jul", issues: 5 },
+      { month: "Aug", issues: 8 },
+      { month: "Sep", issues: 10 },
+      { month: "Oct", issues: 11 },
+    ],
+    issueDistribution: [
+      { label: "Feature", issues: 0, color: "#DB6258" },
+      { label: "UX/UI", issues: 0, color: "#E88981" },
+      { label: "Admin/Backend", issues: 0, color: "#F2B4AF" },
+    ],
+    releaseItems: {
+      feature: [
+        // Improve on customisability on Import/Export
+        {
+          title: "Improve on customisability on Import/Export",
+          description:
+            "Improve flexibility by letting users choose which data to include when importing or exporting.",
+          ticket: "EH-173",
+          showReviewBadge: false,
+          showBadge: true,
+          stgUrl: "https://www.ezhire.asia/transfer/export",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-173",
+          images: [
+            {
+              src: "images/15-10-2026/import-1.png",
+              alt: "Improve on customisability on Import/Export",
+            },
+            {
+              src: "images/15-10-2026/import-2.png",
+              alt: "Improve on customisability on Import/Export",
+            },
+          ],
+        },
+      ],
+      ux: [
+        // Adjust footer information
+        {
+          title: "Adjust footer information",
+          description:
+            "Adjust the footer information to provide accurate and up-to-date contact details and links.",
+          ticket: "EH-196",
+          showBadge: true,
+          stgUrl: "",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-196",
+          image: "images/15-10-2026/footer.png",
+          imageAlt: "Adjust footer information",
+        },
+        // Replacing Reeracoen's PDPA agreement based on Country for Companies
+        {
+          title: "Replacing Reeracoen's PDPA agreement based on Country for Companies",
+          description:
+            "Update the PDPA consent shown to candidates applying through a Career Page so it reflects the company’s country-specific requirements, replacing the current Reeracoen consent.",
+          ticket: "EH-179",
+          showBadge: true,
+          stgUrl: "",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-179",
+          image: "images/15-10-2026/policy.png",
+          imageAlt: "Replacing Reeracoen's PDPA agreement based on Country for Companies",
+        },
+        // Remove "Required" from items on Company Information
+        {
+          title: "Remove \"Required\" of Phone No. and Privacy Policy fields on Company Information",
+          description:
+            "Remove the “Required” label from fields in the Company Information section.",
+          ticket: "EH-191",
+          showBadge: true,
+          stgUrl: "",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-191",
+          image: "images/15-10-2026/remove.png",
+          imageAlt: "Remove Phone No. and Privacy Policy fields required on Company Information",
+        },
+      ],
+      admin: [
+        // Display Selection Process for closed jobs.
+        {
+          title: "Display Selection Process for closed jobs",
+          description:
+            "Display the Selection Process for jobs with a Closed status in the Admin page, allowing users to view the selection process even after the job has been closed.",
+          ticket: "EH-190",
+          showReviewBadge: false,
+          showBadge: true,
+          stgUrl: "https://stg.ezhire.asia/admin/jobs?q%5Bstatus_eq%5D=2&commit=Filter&order=updated_at_desc",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-190",
+          image: "images/15-10-2026/closed.png",
+          imageAlt: "Display Selection Process for closed jobs",
+        },
+      ],
+    },
+  },
 ];
 
 const milestoneDropdown = document.querySelector("#milestone-dropdown");
