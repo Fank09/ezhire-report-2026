@@ -589,6 +589,31 @@ const milestones = [
     ],
     releaseItems: {
       feature: [
+        // Rearrange Customization Page
+        {
+          title: "Rearrange Customization Page",
+          description:
+            "Reorganize the Customization page to make settings easier to find and manage.",
+          ticket: "EH-171",
+          showReviewBadge: true,
+          showBadge: false,
+          stgUrl: "https://stg.ezhire.asia/en/companies/talent_settings/edit",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-171",
+          images: [
+            {
+              src: "images/15-10-2026/customize.png",
+              alt: "Rearrange Customization Page",
+            },
+            {
+              src: "images/15-10-2026/customize-1.png",
+              alt: "Rearrange Customization Page",
+            },
+            {
+              src: "images/15-10-2026/gif.gif",
+              alt: "Rearrange Customization Page",
+            },
+          ],
+        },
         // Improve on customisability on Import/Export
         {
           title: "Improve on customisability on Import/Export",
@@ -597,7 +622,7 @@ const milestones = [
           ticket: "EH-173",
           showReviewBadge: false,
           showBadge: true,
-          stgUrl: "https://www.ezhire.asia/transfer/export",
+          stgUrl: "https://stg.ezhire.asia/en/transfer/export",
           ticketUrl: "https://abroaders.backlog.com/view/EH-173",
           images: [
             {
