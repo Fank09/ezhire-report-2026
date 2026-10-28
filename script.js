@@ -691,6 +691,75 @@ const milestones = [
       ],
     },
   },
+  {
+    id: "2026-10-29",
+    label: "October 29, 2026",
+    issueTrend: [
+      { month: "Jun", issues: 9 },
+      { month: "Jul", issues: 5 },
+      { month: "Aug", issues: 8 },
+      { month: "Sep", issues: 10 },
+      { month: "Oct", issues: 11 },
+    ],
+    issueDistribution: [
+      { label: "Feature", issues: 0, color: "#DB6258" },
+      { label: "UX/UI", issues: 0, color: "#E88981" },
+      { label: "Admin/Backend", issues: 0, color: "#F2B4AF" },
+    ],
+    releaseItems: {
+      feature: [
+        {
+          title: "One-Click Google Calendar Sync",
+          description:
+            "Connect your calendar in one click to sync your events and availability.",
+          ticket: "EH-208",
+          showBadge: true,
+          stgUrl: "https://stg.ezhire.asia/en/companies/process_status_settings/edit",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-208",
+          image: "images/29-10-2026/google.png",
+          imageAlt: "One-Click Google Calendar Sync",
+        },
+      ],
+      ux: [
+        {
+          title: "Improvement on User Experience for Career Page",
+          description:
+            "Make the Career Page easier to navigate, explore, and use throughout the application process.",
+          ticket: "EH-193",
+          showBadge: true,
+          stgUrl: "https://stg.ezhire.asia/en/career_page",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-193",
+          images: [
+            {
+              src: "images/29-10-2026/career.png",
+              alt: "Improvement on User Experience for Career Page",
+            },
+            {
+              src: "images/29-10-2026/career-2.png",
+              alt: "Improvement on User Experience for Career Page",
+            },
+            {
+              src: "images/29-10-2026/career-3.png",
+              alt: "Improvement on User Experience for Career Page",
+            },
+          ],
+        },
+      ],
+      admin: [
+        {
+          title: "Member Notifications Are Optional for Single-Member Companies",
+          description:
+            "Member notifications are optional for companies with one member. Application emails will be sent to the company email without CC’ing any members.",
+          ticket: "EH-192",
+          showBadge: true,
+          stgUrl: "https://stg.ezhire.asia/en/career_page/jobs/1316/setting/application_form",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-192",
+          image: "images/29-10-2026/notify.png",
+          imageAlt: "Member Notifications Are Optional for Single-Member Companies",
+        },
+      ],
+    },
+  },
 ];
 
 const milestoneDropdown = document.querySelector("#milestone-dropdown");
