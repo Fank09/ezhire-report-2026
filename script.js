@@ -699,7 +699,7 @@ const milestones = [
       { month: "Jul", issues: 5 },
       { month: "Aug", issues: 8 },
       { month: "Sep", issues: 10 },
-      { month: "Oct", issues: 11 },
+      { month: "Oct", issues: 13 },
     ],
     issueDistribution: [
       { label: "Feature", issues: 0, color: "#DB6258" },
