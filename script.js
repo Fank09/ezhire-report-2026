@@ -760,6 +760,61 @@ const milestones = [
       ],
     },
   },
+  {
+    id: "2026-11-11",
+    label: "November 11, 2026",
+    issueTrend: [
+      { month: "Jul", issues: 5 },
+      { month: "Aug", issues: 8 },
+      { month: "Sep", issues: 10 },
+      { month: "Oct", issues: 13 },
+      { month: "Nov", issues: 3 },
+    ],
+    issueDistribution: [
+      { label: "Feature", issues: 0, color: "#DB6258" },
+      { label: "UX/UI", issues: 0, color: "#E88981" },
+      { label: "Admin/Backend", issues: 0, color: "#F2B4AF" },
+    ],
+    releaseItems: {
+      feature: [
+        {
+          title: "Import Candidates from Job Board",
+          description:
+            "Import candidates from your connected job boards into EZHire to manage their applications in one place.",
+          ticket: "EH-215",
+          showBadge: false,
+          showReviewBadge: true,
+          stgUrl: "https://stg.ezhire.asia/en/jobs/215",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-215",
+          images: [
+            {
+              src: "images/11-11-2026/import.png",
+              alt: "Import Candidates from Job Board",
+            },
+            {
+              src: "images/11-11-2026/import-2.png",
+              alt: "Import Candidates from Job Board",
+            },
+          ],
+        },
+      ],
+      ux: [
+        {
+          title: "Update Global Menu for EZHire",
+          description:
+            "Navigate EZHire more easily with an updated global menu that makes key features simpler to find and access.",
+          ticket: "EH-219",
+          showBadge: true,
+          showReviewBadge: false,
+          stgUrl: "https://stg.ezhire.asia/en/dashboard",
+          ticketUrl: "https://abroaders.backlog.com/view/EH-219",
+          image: "images/11-11-2026/side.png",
+          imageAlt: "Side Menu Update for EZHire",
+        },
+      ],
+      admin: [],
+    },
+  },
 ];
 
 const milestoneDropdown = document.querySelector("#milestone-dropdown");
